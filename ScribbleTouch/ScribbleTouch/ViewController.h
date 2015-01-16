@@ -10,6 +10,8 @@
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) IBInspectable int cornerSize;
+
 
 @end
 

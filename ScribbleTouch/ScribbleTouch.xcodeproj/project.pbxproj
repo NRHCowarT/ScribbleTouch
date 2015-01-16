@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		988501901A681988007D7AC3 /* ChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9885018F1A681988007D7AC3 /* ChoiceViewController.m */; };
+		988501961A699DC4007D7AC3 /* PrettyButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 988501951A699DC4007D7AC3 /* PrettyButton.m */; };
 		A9F572C41A66C7BB007B1EEA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C31A66C7BB007B1EEA /* main.m */; };
 		A9F572C71A66C7BB007B1EEA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C61A66C7BB007B1EEA /* AppDelegate.m */; };
 		A9F572CA1A66C7BB007B1EEA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F572C91A66C7BB007B1EEA /* ViewController.m */; };
@@ -28,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9885018E1A681988007D7AC3 /* ChoiceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoiceViewController.h; sourceTree = "<group>"; };
+		9885018F1A681988007D7AC3 /* ChoiceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoiceViewController.m; sourceTree = "<group>"; };
+		988501941A699DC4007D7AC3 /* PrettyButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrettyButton.h; sourceTree = "<group>"; };
+		988501951A699DC4007D7AC3 /* PrettyButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PrettyButton.m; sourceTree = "<group>"; };
 		A9F572BE1A66C7BB007B1EEA /* ScribbleTouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScribbleTouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F572C21A66C7BB007B1EEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9F572C31A66C7BB007B1EEA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +90,10 @@
 		A9F572C01A66C7BB007B1EEA /* ScribbleTouch */ = {
 			isa = PBXGroup;
 			children = (
+				988501941A699DC4007D7AC3 /* PrettyButton.h */,
+				988501951A699DC4007D7AC3 /* PrettyButton.m */,
+				9885018E1A681988007D7AC3 /* ChoiceViewController.h */,
+				9885018F1A681988007D7AC3 /* ChoiceViewController.m */,
 				A9F572E71A66C81E007B1EEA /* ScribbleView.h */,
 				A9F572E81A66C81E007B1EEA /* ScribbleView.m */,
 				A9F572C81A66C7BB007B1EEA /* ViewController.h */,
@@ -227,6 +237,8 @@
 				A9F572CA1A66C7BB007B1EEA /* ViewController.m in Sources */,
 				A9F572C71A66C7BB007B1EEA /* AppDelegate.m in Sources */,
 				A9F572E91A66C81E007B1EEA /* ScribbleView.m in Sources */,
+				988501901A681988007D7AC3 /* ChoiceViewController.m in Sources */,
+				988501961A699DC4007D7AC3 /* PrettyButton.m in Sources */,
 				A9F572C41A66C7BB007B1EEA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,6 +430,7 @@
 				A9F572E31A66C7BB007B1EEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A9F572E41A66C7BB007B1EEA /* Build configuration list for PBXNativeTarget "ScribbleTouchTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				A9F572E61A66C7BB007B1EEA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
