@@ -88,9 +88,6 @@
                                                         <constraint firstAttribute="height" constant="50" id="I4h-GX-VEK"/>
                                                         <constraint firstAttribute="width" constant="50" id="TRp-cR-wjF"/>
                                                     </constraints>
-                                                    <state key="normal">
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                                    </state>
                                                     <userDefinedRuntimeAttributes>
                                                         <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
                                                             <integer key="value" value="25"/>
@@ -102,7 +99,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eb4-Vv-Tqw" customClass="PrettyButton">
                                                     <rect key="frame" x="150" y="40" width="50" height="50"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="bkN-af-CsX"/>
                                                         <constraint firstAttribute="width" constant="50" id="iSV-u0-c45"/>
@@ -269,7 +266,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBd-wb-r9J" customClass="PrettyButton">
                                                     <rect key="frame" x="150" y="127" width="50" height="50"/>
-                                                    <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="83C-Rh-Guz"/>
                                                         <constraint firstAttribute="width" constant="50" id="t2F-Dy-svz"/>
@@ -288,7 +285,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Po-SL-1hh" customClass="PrettyButton">
                                                     <rect key="frame" x="100" y="127" width="50" height="50"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.98063764210000004" green="1" blue="0.056770609069999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="Rsj-qj-a3d"/>
                                                         <constraint firstAttribute="height" constant="50" id="WoS-Cb-2FN"/>
@@ -307,7 +304,7 @@
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Of-JE-oCz" customClass="PrettyButton">
                                                     <rect key="frame" x="100" y="40" width="50" height="50"/>
-                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <color key="backgroundColor" red="0.98063764210000004" green="1" blue="0.056770609069999999" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="Wve-Q8-FT5"/>
                                                         <constraint firstAttribute="height" constant="50" id="fLv-PS-p60"/>
@@ -338,6 +335,38 @@
                                                     </userDefinedRuntimeAttributes>
                                                     <connections>
                                                         <action selector="changeShapeType:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7RG-US-aQ5"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4aN-vj-AVB" customClass="PrettyButton">
+                                                    <rect key="frame" x="8" y="562" width="110" height="30"/>
+                                                    <color key="backgroundColor" red="0.90674321339999997" green="0.080796481919999996" blue="0.105580564" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Clear">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="clearButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="0ck-8b-KbB"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e83-W5-ai0" customClass="PrettyButton">
+                                                    <rect key="frame" x="137" y="562" width="110" height="30"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <state key="normal" title="Undo">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerSize">
+                                                            <integer key="value" value="8"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="undoButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="wU7-jX-GDj"/>
                                                     </connections>
                                                 </button>
                                             </subviews>

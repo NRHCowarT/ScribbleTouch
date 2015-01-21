@@ -58,13 +58,9 @@
 
         if (points.count < 2) continue;
         
-        [self addToContext:context withScribble:scribble andType:@"Fill"];
+        [self addToContext:context withScribble:scribble andType:@"fillColor"];
         [self addToContext:context withScribble:scribble andType:@"Stroke"];
-        
-    
-
-    
-        
+     
     }
     
 }
@@ -89,11 +85,11 @@
     CGContextSetLineWidth(context, [scribble[@"strokeWidth"] floatValue]);
     
     UIColor * strokeColor = scribble[@"strokeColor"];
-    [strokeColor set];
+    [strokeColor setStroke];
     
-    //        UIColor * fillColor = scribble[@"fillColor"];
-    //        [fillColor set];
-
+     UIColor * fillColor = scribble[@"fillColor"];
+    [fillColor setFill];
+   
     CGPoint firstPoint = [scribble[@"points"][0] CGPointValue];
     CGPoint secondPoint = [scribble[@"points"][1] CGPointValue];
     
@@ -127,6 +123,8 @@
             
             CGContextAddEllipseInRect(context, rect);
             
+            break;
+            
         case 4: // Triangle
             
             CGContextMoveToPoint(context,firstPoint.x + width/2, firstPoint.y);
@@ -134,7 +132,7 @@
             CGContextAddLineToPoint(context, secondPoint.x, secondPoint.y);
             CGContextAddLineToPoint(context, firstPoint.x, secondPoint.y);
             CGContextAddLineToPoint(context, firstPoint.x + width / 2, firstPoint.y);
-            
+        
             break;
             
         default:
@@ -142,13 +140,14 @@
             break;
     }
     
-    if ([type isEqualToString:@"Fill"]) {
+    if ([type isEqualToString:@"fillColor"]) {
         
         CGContextFillPath(context);
     
     } else {
         
         CGContextStrokePath(context);
+    
         
     }
     

@@ -65,8 +65,20 @@
 - (IBAction)changeStrokeWidth:(UISlider *)sender {
     
     selectedStrokeWidth = sender.value;
-
 }
+
+- (IBAction)clearButton:(UIButton *)sender {
+    ScribbleView * sView = (ScribbleView *)self.view;
+    sView.scribbles = nil;
+    [self.view setNeedsDisplay];
+}
+
+- (IBAction)undoButton:(UIButton *)sender {
+    ScribbleView * sView = (ScribbleView *)self.view;
+    [sView.scribbles removeLastObject];
+    [self.view setNeedsDisplay];
+}
+
 
 -(void)choice:(NSString *)choice forGroup:(NSString *)group{
     if ([group isEqualToString:@"BlendMode"]) {
@@ -141,7 +153,7 @@
     currentScribble = [@{
                          
                          @"type":selectedShapeType,
-                         @"fillColor":selectedBlendMode,
+                         @"fillColor":selectedFillColor,
                          @"strokeColor":selectedStrokeColor,
                          @"strokeWidth":@(selectedStrokeWidth),
                          @"alpha":@(shapeAlpha),
