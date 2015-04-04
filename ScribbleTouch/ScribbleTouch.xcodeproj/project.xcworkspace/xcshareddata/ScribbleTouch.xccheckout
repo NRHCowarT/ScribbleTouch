@@ -13,7 +13,7 @@
 		<key>55DEB50C1BA2BE43DA7B18526981DFC811300C2C</key>
 		<string>https://github.com/joalbright/iOS-January-2015.git</string>
 		<key>D56C5169987EC0B9AD16337D9C5A6FE019BA32C9</key>
-		<string>https://github.com/joalbright/ScribbleTouch.git</string>
+		<string>https://github.com/NRHCowarT/ScribbleTouch.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ScribbleTouch/ScribbleTouch.xcodeproj</string>
@@ -25,7 +25,7 @@
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/joalbright/ScribbleTouch.git</string>
+	<string>https://github.com/NRHCowarT/ScribbleTouch.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
