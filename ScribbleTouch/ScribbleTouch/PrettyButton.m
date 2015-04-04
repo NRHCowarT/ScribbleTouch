@@ -18,6 +18,8 @@
     
     self.layer.cornerRadius = self.cornerSize;
     self.layer.masksToBounds = YES;
+    self.layer.borderWidth = 1;
+    self.layer.borderColor = [UIColor blackColor].CGColor;
     
 }
 
